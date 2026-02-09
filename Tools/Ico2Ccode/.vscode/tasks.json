@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "dotnet",
+			"task": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile",
+			"label": "build"
+		},
+		{
+			"type": "dotnet",
+			"task": "clean",
+			"problemMatcher": "$msCompile",
+			"label": "dotnet: clean"
+		},
+		{
+			"type": "shell",
+			"command": "dotnet clean; dotnet build",
+			"args": [],
+			"label": "rebuild",
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"type": "shell",
+			"command": "dotnet publish -r linux-x64 --self-contained false",
+			"args": [],
+			"label": "publish linux-x64",
+			"problemMatcher": "$msCompile"
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Ico2Ccode": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Projects\\SuPLC\\Resources\\Icons\\button.ico output.h Medium",
+      "hotReloadEnabled": false
+    }
+  }
+}

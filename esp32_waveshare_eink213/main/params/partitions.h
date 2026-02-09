@@ -1,0 +1,8 @@
+#define storage_0_partition "storage_0"
+#define storage_1_partition "storage_1"
+#define storage_0_path "/storage_0"
+#define storage_1_path "/storage_1"
+#define settings_storage_name "settings"
+#define ladder_storage_name "ladder"
+#define backups_storage_name "backups"
+#define backups_path "/backups"

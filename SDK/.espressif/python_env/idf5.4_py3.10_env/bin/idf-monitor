@@ -1,0 +1,6 @@
+#!/home/viordash/projects/SuPLC/SDK/.espressif/python_env/idf5.4_py3.10_env/bin/python
+import sys
+from esp_idf_monitor.idf_monitor import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())

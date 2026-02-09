@@ -1,0 +1,47 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "time make -j $(nproc) all",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build & install",
+            "type": "shell",
+            "command": "make -j $(nproc) flash",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "build & ota",
+            "type": "shell",  
+            "command": "make -j $(nproc) && echo -e '---Start uploading firmware---\n>>>>\n' && curl -H 'Content-Type:application/octet-stream' --data-binary @./build/esp32_waveshare_eink213.bin http://192.168.0.192/update",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "rebuild",
+            "type": "shell",
+            "command": "make -j $(nproc) clean && time make -j $(nproc) all",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        }
+    ]
+}

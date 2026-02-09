@@ -1,0 +1,34 @@
+{
+    "idfInstalled": {
+        "/home/viordash/Downloads/SuPLC_CtrlPlusDemo/SDK/esp-idf-v5.4": {
+            "version": "5.4",
+            "path": "/home/viordash/Downloads/SuPLC_CtrlPlusDemo/SDK/esp-idf",
+            "features": [
+                "core"
+            ],
+            "targets": [
+                "esp32"
+            ]
+        },
+        "/home/viordash/projects/SuPLC_CtrlPlus/SDK/esp-idf-v5.4": {
+            "version": "5.4",
+            "path": "/home/viordash/projects/SuPLC_CtrlPlus/SDK/esp-idf",
+            "features": [
+                "core"
+            ],
+            "targets": [
+                "esp32"
+            ]
+        },
+        "/home/viordash/projects/SuPLC/SDK/esp-idf-v5.4": {
+            "version": "5.4",
+            "path": "/home/viordash/projects/SuPLC/SDK/esp-idf",
+            "features": [
+                "core"
+            ],
+            "targets": [
+                "esp32"
+            ]
+        }
+    }
+}
